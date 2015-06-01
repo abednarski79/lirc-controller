@@ -1,0 +1,42 @@
+begin
+		prog   = pylirc
+		config = FORWARD_ID
+		remote = Apple_A1156 
+		button = FORWARD
+		repeat = 2
+end
+begin
+        prog   = pylirc
+        config = REVERSE_ID
+        remote = Apple_A1156
+        button = REVERSE
+		repeat = 2
+end
+begin
+        prog   = pylirc
+        config = MENU_ID
+        remote = Apple_A1156
+        button = MENU
+		repeat = 2
+end
+begin
+        prog   = pylirc
+        config = PLAY_ID
+        remote = Apple_A1156
+        button = PLAY
+        repeat = 2
+end
+begin
+        prog   = pylirc
+        config = PLUS_ID
+        remote = Apple_A1156
+        button = PLUS
+        repeat = 2
+end
+begin
+        prog   = pylirc
+        config = MINUS_ID
+        remote = Apple_A1156
+        button = MINUS
+        repeat = 2
+end

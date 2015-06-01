@@ -1,0 +1,2 @@
+http://www.python.org/dev/peps/pep-3143/
+http://jimmyg.org/blog/2010/python-daemon-init-script.html

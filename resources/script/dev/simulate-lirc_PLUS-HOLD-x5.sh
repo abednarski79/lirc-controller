@@ -1,0 +1,6 @@
+irsend simulate "0000000077e1d0ca 00 PLUS Apple_A1156"
+irsend simulate "0000000077e1d0ca 01 PLUS Apple_A1156"
+irsend simulate "0000000077e1d0ca 02 PLUS Apple_A1156"
+irsend simulate "0000000077e1d0ca 03 PLUS Apple_A1156"
+irsend simulate "0000000077e1d0ca 04 PLUS Apple_A1156"
+irsend simulate "0000000077e1d0ca 05 PLUS Apple_A1156"

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<configuration>
+	<properties>
+		<property id="blocking">10</property>
+		<property id="gapDuration">20</property>
+		<property id="someOtherValue">30</property>
+	</properties>
+	<buttons>
+		<button id="PLUS_ID">
+			<action id="VOLUME_UP" type="CLICK">
+				<task>
+					<module>volume.VolumeController</module>
+					<class>VolumeController</class>
+					<method>volumeUp</method>
+					<parameter>volume_up.sh</parameter>
+				</task>
+				<isCancelable>False</isCancelable>
+			</action>
+			<action id="VOLUME_UP" type="DOUBLE_CLICK">
+				<task>
+					<module>volume.VolumeController</module>
+					<class>VolumeController</class>
+					<method>volumeUp</method>
+					<parameter>/some/path/to/shell/script/volume_up.sh</parameter>
+				</task>
+				<fireDelay>0.22</fireDelay>
+			</action>
+			<action id="VOLUME_UP" type="HOLD">
+				<task>
+					<module>volume.VolumeController</module>
+					<class>VolumeController</class>
+					<method>volumeUp</method>
+					<parameter>volume_up.sh</parameter>
+				</task>
+				<fireDelay>0.22</fireDelay>
+				<isCancelable>True</isCancelable>
+			</action>
+	    </button>	    
+	</buttons>    
+</configuration>

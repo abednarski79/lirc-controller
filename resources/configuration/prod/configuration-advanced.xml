@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<configuration>
+	<properties>
+		<property id="blocking">0</property>
+		<property id="gapDuration">10</property>
+	</properties>
+	<buttons>
+		<button id="PLUS_ID">
+			<action id="VOLUME_UP" type="CLICK">
+				<task>
+					<module>main.controller.shell.shell_controller</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>sh /root/scripts/mpd_v2/commands/volumeUp/volumeUp_v2.sh</parameter>
+				</task>
+				<isCancelable>False</isCancelable>
+			</action>
+		</button>
+		<button id="MINUS_ID">
+			<action id="VOLUME_DOWN" type="CLICK">
+				<task>
+					<module>main.controller.shell.shell_controller</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>sh /root/scripts/mpd_v2/commands/volumeDown/volumeDown_v2.sh</parameter>
+				</task>
+				<isCancelable>False</isCancelable>
+			</action>
+		</button>
+		<button id="FORWARD_ID">
+			<action id="NEXT_SONG" type="CLICK">
+				<task>
+					<module>main.controller.shell.shell_controller</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>sh /root/scripts/mpd_v2/commands/playNextSong/playNextSong_v1.sh</parameter>
+				</task>
+				<isCancelable>True</isCancelable>
+				<fireDelay>0.22</fireDelay>
+			</action>
+			<action id="NEXT_ALBUM" type="DOUBLE_CLICK">
+				<task>
+					<module>main.controller.shell.shell_controller</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>sh /root/scripts/mpd_v2/commands/playNextAlbum/playNextAlbum_v1.sh</parameter>
+				</task>				
+			</action>			
+		</button>				
+		<button id="REVERSE_ID">
+			<action id="PREVIOUS_SONG" type="CLICK">
+				<task>
+					<module>main.controller.shell.shell_controller</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>sh /root/scripts/mpd_v2/commands/playPreviousSong/playPreviousSong_v1.sh</parameter>
+				</task>
+				<isCancelable>True</isCancelable>
+				<fireDelay>0.22</fireDelay>	
+			</action>
+			<action id="PREVIOUS_ALBUM" type="DOUBLE_CLICK">
+				<task>
+					<module>main.controller.shell.shell_controller</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>sh /root/scripts/mpd_v2/commands/playPreviousAlbum/playPreviousAlbum_v1.sh</parameter>
+				</task>		
+			</action>			
+		</button>
+		<button id="PLAY_ID">
+			<action id="PLAY_PAUSE" type="CLICK">
+				<task>
+					<module>main.controller.shell.shell_controller</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>mpc toggle</parameter>
+				</task>
+				<isCancelable>False</isCancelable>			
+			</action>
+		</button>				
+	</buttons>
+</configuration>

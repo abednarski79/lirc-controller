@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<configuration>
+	<properties>
+		<property id="blocking">0</property>
+		<property id="gapDuration">10</property>
+	</properties>
+	<buttons>
+		<button id="PLUS_ID">
+			<action id="VOLUME_UP" type="CLICK">
+				<task>
+					<module>volume.VolumeController</module>
+					<class>VolumeController</class>
+					<method>volumeUp</method>
+				</task>
+				<isCancelable>False</isCancelable>
+			</action>
+			<action id="VOLUME_UP" type="DOUBLE_CLICK">
+				<task>
+					<module>volume.VolumeController</module>
+					<class>VolumeController</class>
+					<method>volumeUp</method>
+				</task>
+				<isCancelable>False</isCancelable>
+			</action>
+			<action id="VOLUME_UP" type="HOLD">
+				<task>
+					<module>volume.VolumeController</module>
+					<class>VolumeController</class>
+					<method>volumeUp</method>
+				</task>
+				<isCancelable>False</isCancelable>
+			</action>
+	    </button>
+		<button id="FORWARD_ID">
+			<action id="NEXT_SONG" type="CLICK">
+				<task>
+					<module>mpd.MpdController</module>
+					<class>MpdController</class>
+					<method>nextSong</method>
+				</task>
+				<fireDelay>0.22</fireDelay>
+			</action>
+			<action id="NEXT_ALBUM" type="DOUBLE_CLICK">
+				<task>
+					<module>mpd.MpdController</module>
+					<class>MpdController</class>
+					<method>nextAlbum</method>
+				</task>
+				<fireDelay>0.22</fireDelay>
+			</action>
+			<action id="SKIP_FORWARD" type="HOLD">
+				<task>
+					<module>mpd.MpdController</module>
+					<class>MpdController</class>
+					<method>skipForward</method>
+				</task>
+				<minimalRepeatTrigger>1</minimalRepeatTrigger>
+			</action>			
+	    </button>
+		<button id="PLAY_ID">
+			<action id="PLAY_PAUSE" type="CLICK">
+				<task>
+					<module>shell.ShellController</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>/some/path/to/shell/script/play_pause.sh</parameter>
+				</task>
+				<fireDelay>0.22</fireDelay>
+			</action>
+			<action id="PLAY_PAUSE" type="DOUBLE_CLICK">
+				<task>
+					<module>shell.ShellController</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>/some/path/to/shell/script/play_pause.sh</parameter>
+				</task>
+				<fireDelay>0.22</fireDelay>
+			</action>
+			<action id="SKIP_FORWARD" type="HOLD">
+				<task>
+					<module>shell.ShellController</module>
+					<class>ShellController</class>
+					<method>executeCommand</method>
+					<parameter>/some/path/to/shell/script/power_off.sh</parameter>
+				</task>
+				<minimalRepeatTrigger>5</minimalRepeatTrigger>
+			</action>			
+	    </button>		    
+	</buttons>    
+</configuration>

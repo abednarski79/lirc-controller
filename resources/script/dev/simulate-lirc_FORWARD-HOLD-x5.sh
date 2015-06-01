@@ -1,0 +1,6 @@
+irsend simulate "0000000077e1e0ca 00 FORWARD Apple_A1156"
+irsend simulate "0000000077e1e0ca 01 FORWARD Apple_A1156"
+irsend simulate "0000000077e1e0ca 02 FORWARD Apple_A1156"
+irsend simulate "0000000077e1e0ca 03 FORWARD Apple_A1156"
+irsend simulate "0000000077e1e0ca 04 FORWARD Apple_A1156"
+irsend simulate "0000000077e1e0ca 05 FORWARD Apple_A1156"
