@@ -91,4 +91,5 @@ and change line containing LIRCD_ARGS to:
   
 
 - restart LIRC daemon
- > service lirc restart
+
+> service lirc restart
