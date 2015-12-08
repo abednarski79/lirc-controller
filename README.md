@@ -72,16 +72,21 @@ Currently all actions which can run from wrapper are executed using bash scripts
 To test software dependent on signals coming from LIRC daemon without having physical remote receiver LIRC daemon needs to be run in the mode that allows to simulate signals, there are 2 options to do that:
 
 - kill currently running daemon:
-- 
+
 > service lirc stop
 
 - run daemon from command line:
+- 
 > lircd --nodaemon --allow-simulate /etc/lirc/lircrc
 
 OR
+
 edit file:
+
 > /etc/lirc/hardware.conf
+
 and change line containing LIRCD_ARGS to: 
+
 > LIRCD_ARGS="--allow-simulate"
   
 
